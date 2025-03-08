@@ -10,8 +10,6 @@ function Product() {
   const { addToCart } = useContext(CartContext);
   const [quantity, setQuantity] = useState(1);
 
-  console.log(product)
-
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error}</p>;
   if (!product) return <p>No product found.</p>;
