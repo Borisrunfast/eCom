@@ -19,12 +19,7 @@
 
 .cart-page a {
   text-decoration: none;
-  color: var(--primary-color);
   font-weight: 500;
-}
-
-.cart-page a:hover {
-  color: #2d84bd;
 }
 
 .cart-table {
@@ -72,7 +67,7 @@
 
 .checkout-btn {
   background-color: var(--primary-color);
-  color: #fff;
+  color: #fff; 
   border: none;
   padding: 0.6rem 1.2rem;
   border-radius: 4px;
