@@ -1,0 +1,128 @@
+.cart-page {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 4px;
+}
+  
+.cart-page h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--header-text-color);
+}
+
+.cart-page p {
+  text-align: center;
+}
+
+.cart-page a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.cart-page a:hover {
+  color: #2d84bd;
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+}
+
+.cart-table thead {
+  background-color: #f7f7f7;
+}
+
+.cart-table th,
+.cart-table td {
+  text-align: left;
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--card-border);
+}
+
+
+.remove-btn {
+  background-color: #e74c3c;
+  border: none;
+  color: #fff;
+  padding: 0.4rem 0.7rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.remove-btn:hover {
+  background-color: #c0392b;
+}
+
+.cart-total {
+  text-align: right;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.cart-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.checkout-btn {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.checkout-btn:hover {
+  background-color: #2d84bd;
+}
+
+
+@media screen and (max-width: 600px) {
+  /* Hide the table header on small screens */
+  .cart-table thead {
+    display: none;
+  }
+
+  .cart-table,
+  .cart-table tbody,
+  .cart-table tr,
+  .cart-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .cart-table tr {
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--card-border);
+  }
+
+  .cart-table td {
+    /* Each cell on its own line */
+    text-align: left;
+    border-bottom: none;
+    position: relative;
+    padding-left: 50%;
+    white-space: normal;
+    word-wrap: break-word;
+  }
+
+  /* The label from data-label */
+  .cart-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 1rem;
+    top: 0;
+    padding-top: 0.75rem;
+    font-weight: bold;
+  }
+}
+  
