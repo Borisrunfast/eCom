@@ -25,7 +25,6 @@ function Checkout() {
     );
   }
 
-
   function handlePlaceOrder() {
 
     clearCart();

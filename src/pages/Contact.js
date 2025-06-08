@@ -14,7 +14,6 @@ function Contact() {
 
   // On valid submission
   const onSubmit = (data) => {
-    console.log("Contact Form Data:", data);
     reset();
     setSuccessMessage("Message sent successfully!");
   };

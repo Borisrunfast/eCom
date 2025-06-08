@@ -36,7 +36,7 @@ function Cart() {
             <th>Price (Each)</th>
             <th>Quantity</th>
             <th>Subtotal</th>
-            <th></th>
+            <th/>
           </tr>
         </thead>
         <tbody>

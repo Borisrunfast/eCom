@@ -22,7 +22,7 @@ function Header() {
             </li>
             <li>
               <div className="cart-container">
-                <   CartIcon />
+                < CartIcon />
               </div>
             </li>
           </ul>
